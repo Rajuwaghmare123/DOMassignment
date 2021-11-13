@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://www.adobe.com/express/create/media_1f78a60f54d4768f60186918e91c3a695f221f849.png?width=2000&format=webply&optimize=medium);
+        }
+        #container{
+            width: 400px;
+            height: 130px;
+            box-shadow: 0 0 10px black;
+            padding: 50px;
+            margin: 100px auto ;
+            background-color: rgb(177, 235, 85);
+            color: rgb(48, 3, 3);
+          
+        }
+        #title{
+           padding-left: 100px;
+           padding-top: 40px;
+            font-size: larger;
+            font-weight: 1000;
+        }
+        #bt{
+            padding-left: 50px;
+            padding-top: 20px;           
+      
+        }
+        .b1{
+          
+            margin: 4px;
+            /* color: blueviolet;
+             */
+        }
+    </style>
+    <script>
+        function first(){
+           let event= document.getElementById("p1");
+           event.innerText="Good Morning";
+           event.style.color="red";
+
+        }
+        function second(){
+            let event2 =document.getElementById("p1");
+            event2.innerText="Good Evening";
+            event2.style.color='green';
+        }
+        function third(){
+           let event3= document.getElementById("p1");
+           event3.innerText="Good Night";
+           event3.style.color='blueviolet';
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+    <div id="title">
+    <span id="p1">Hello</span> &nbsp;<span>Raju</span>
+    </div>
+    <div id="bt">
+    <button id="c1" onclick="first()">Good Morning</button>
+    <button id="c2" onclick="second()">Good Evening</button>
+    <button id="c3" onclick="third()">Good Night </button>
+    </div>
+</div>
+</body>
+</html>
