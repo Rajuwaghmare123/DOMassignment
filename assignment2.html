@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 100px;
+            box-shadow: 0 0 10px black;
+            padding: 10px;
+            margin: 100px auto;
+        }
+    </style>
+    <script>
+        function fnshowHidePass() {
+        //    var inputref= document.getElementById("i1");
+        //     var buttonRef=document.querySelector(".btn");
+        //    inputref.type = "text"
+          
+        //    buttonRef.innerText="Hide Passward";
+
+        if(document.querySelector('#i1').type=='password')
+        {
+            document.querySelector('#i1').type='text';
+            document.querySelector('.btn').innerText="hide Password";
+        }
+        else
+        {
+            document.querySelector("#i1").type="password";
+            document.querySelector('.btn').innerText='show Password';
+
+        }
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h2>Show/Hide Password</h2>
+        <label > Enter text</label>
+        <input type="Password" id="i1"/>
+        <button onclick="fnshowHidePass()" class="btn">show password</button>
+    </div>
+</body>
+</html>
